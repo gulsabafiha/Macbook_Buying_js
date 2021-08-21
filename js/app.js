@@ -4,7 +4,6 @@ function costSet(product,cost) {
     inputVlaue.innerText = cost;  
 }
 
-
 //Add EVenthadler to all buttons
 //Memory cost eventhandler
 document.getElementById('eightgb-memory').addEventListener('click', function () {
@@ -61,7 +60,6 @@ function totalCost() {
 //Bottom Total Price Update
 function totalPrice() {
     const totalField = document.getElementById('total-price');
-    const totalText = totalField.innerText;
     const fullCost = getValue('fix') + getValue('memory') + getValue('storage') + getValue('delivery');
     totalField.innerText = fullCost;
     const fullprice = parseFloat(fullCost);
